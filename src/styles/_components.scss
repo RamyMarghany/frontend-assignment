@@ -1,0 +1,121 @@
+@import "base";
+@import "layout";
+
+
+//header
+.header{
+    padding-top: 2em;
+    &__logo{
+        width:15em;
+    }
+    &__icon{
+        background-color: $light-blue;
+        font-size: 15px;
+        padding: 10px;
+        color:$main-blue;
+    }
+    &__input{
+        @extend .header__icon;
+        color: $black;
+        height: 35px;
+        border: none;
+        border-radius: 6px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: 1px solid $light-blue;
+        position: relative;
+        top: 4px;
+    }
+}
+
+
+//sign-in form
+.login-form{
+    @include  box-shadow(0 1px 4px rgba(41, 51, 57, 0.5));
+    padding: 2em 3em;
+    margin: 7em auto 10em;
+    &__title{
+        color:$black;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 2em;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    &__description{
+        color:$dark-gray;
+        font-size: 1.2em;
+        text-align: center;
+        margin-bottom: 3em;
+    }
+    &__input{
+        height: 3em;
+    }
+    &__forgot{
+        color:$main-blue;
+    }
+    &__submit{
+        width:100%;
+        text-transform: uppercase;
+        background: $main-blue;
+        color:$white;
+        border: 1px solid $main-blue;
+        font-size: 1.7em;
+        height: 2.5em;
+        margin-top: 0.5em;
+    }
+}
+
+.ant-checkbox-checked .ant-checkbox-inner{
+    background-color: $main-blue;
+    border: 1px solid $main-blue;
+}
+
+.ant-form-item{
+    margin-bottom:0; 
+}
+
+.ant-form-item-control-wrapper{
+    position: relative;
+    margin-bottom: 2em;
+    .ant-form-explain{
+        position: absolute;
+        top: -1.4em;
+        right: 0;
+        color: $error;
+        background-color:$pink;
+        padding: 0 5px;
+    }
+}
+
+
+
+//footer
+.footer-container{
+    border-top: 1px solid $light-gray;
+    padding-top: 10em;
+}
+.footer{
+    &__border{
+        @include  box-shadow(0 1px 4px rgba(41, 51, 57, 0.5));
+        text-align: center;
+        padding: 5em 0;
+    }
+    &__img{
+        width:70%;
+    }
+    &__name{
+        margin-bottom: 0;
+        color:$dark-gray;
+        text-align: left;
+        font-size: 1.2em;
+        margin-top: 1.7em;
+    }
+    &__price{
+        @extend .footer__name;
+        color:black;
+        font-size: 2em;
+        text-transform: uppercase;
+        margin-top: 0;
+    }
+}

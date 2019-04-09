@@ -1,0 +1,14 @@
+$main-blue: #0c5ba7;
+$light-blue:#f0f7fe;
+$white: #fff;
+$black: #414141;
+$light-gray: #f0f0f0;
+$dark-gray: #ddd;
+$error: #ee2427;
+$pink: #ffeef1;
+
+@mixin box-shadow($property) {
+    -webkit-box-shadow: $property;
+    -ms-box-shadow: $property;
+    box-shadow: $property;
+  }

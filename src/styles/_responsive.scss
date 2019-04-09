@@ -1,0 +1,75 @@
+
+/* Medium & Large */
+@media only screen and (min-width: 768px){
+   
+}
+
+/* Only Large */
+@media only screen and (min-width: 992px){
+    
+}
+
+/* Only X-Large */
+@media only screen and (min-width: 1200px){
+   
+}
+
+/* Only Medium */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+   
+}
+
+/* Only Small */
+@media only screen and (max-width: 768px ) {
+  
+}
+
+/* Only X-Small */
+@media only screen and (max-width: 568px ) {
+    //header
+    .header{
+        text-align: center;
+        &__search{
+            margin-top: 1em;
+        }
+    }
+
+    //signin form
+    .login-form{
+        &__forgot{
+            float: left;
+        }
+    }
+
+
+    //footer
+    .footer-container{
+        border-top: none;
+        padding-top: 0em;
+    }
+
+    .footer{
+        margin-bottom: 5em;
+        &__name, &__price{
+            text-align: center;
+        }
+    }
+}
+
+
+
+
+/* Only iPad portrait mode*/
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 1)  {}
+
+
+/* Only iPad landscape mode*/
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1366px) 
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 1)  {}
